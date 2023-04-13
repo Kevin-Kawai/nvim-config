@@ -7,10 +7,6 @@ local plugins = {
     end,
   },
   {
-    "Shatur/neovim-session-manager",
-    lazy = false
-  },
-  {
     "tpope/vim-fugitive",
     lazy = false
   },
@@ -24,6 +20,17 @@ local plugins = {
   },
   {
     "junegunn/fzf.vim",
+    lazy = false
+  },
+  {
+    "rmagatti/auto-session",
+    lazy = false,
+    config = function ()
+      require "custom.configs.autosession"
+    end
+  },
+  {
+    "rmagatti/session-lens",
     lazy = false
   }
 }
