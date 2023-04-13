@@ -1,5 +1,4 @@
 local plugins = {
-
   {
     "neovim/nvim-lspconfig",
     config = function ()
@@ -17,6 +16,14 @@ local plugins = {
   },
   {
     "sindrets/diffview.nvim",
+    lazy = false
+  },
+  {
+    "junegunn/fzf",
+    lazy = false
+  },
+  {
+    "junegunn/fzf.vim",
     lazy = false
   }
 }
