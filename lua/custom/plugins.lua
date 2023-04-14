@@ -7,6 +7,13 @@ local plugins = {
     end,
   },
   {
+    "jose-elias-alvarez/null-ls.nvim",
+    lazy = false,
+    config = function ()
+      require "custom.configs.nullls"
+    end
+  },
+  {
     "tpope/vim-fugitive",
     lazy = false
   },
