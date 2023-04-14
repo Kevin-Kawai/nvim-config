@@ -84,7 +84,9 @@ local default_plugins = {
     cmd = { "TSInstall", "TSBufEnable", "TSBufDisable", "TSModuleInfo" },
     build = ":TSUpdate",
     opts = function()
-      return require "plugins.configs.treesitter"
+      -- return require "plugins.configs.treesitter"
+      -- use custom config
+      return require "custom.configs.treesitter"
     end,
     config = function(_, opts)
       dofile(vim.g.base46_cache .. "syntax")
@@ -125,7 +127,9 @@ local default_plugins = {
     "williamboman/mason.nvim",
     cmd = { "Mason", "MasonInstall", "MasonInstallAll", "MasonUninstall", "MasonUninstallAll", "MasonLog" },
     opts = function()
-      return require "plugins.configs.mason"
+      -- return require "plugins.configs.mason"
+      -- switched to use custom config, base options copied are all copied
+      return require "custom.configs.mason"
     end,
     config = function(_, opts)
       dofile(vim.g.base46_cache .. "mason")

@@ -1,6 +1,9 @@
--- default options
+-- custom config, based copied from plugs/configs/mason.lua
 local options = {
-  ensure_installed = { "lua-language-server" }, -- not an option from mason.nvim
+  ensure_installed = { 
+    "lua-language-server",
+    "typescript-language-server"
+  }, -- not an option from mason.nvim
 
   PATH = "skip",
 
